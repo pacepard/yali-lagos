@@ -1,38 +1,34 @@
+import { Background } from '@/components/custom/background'
 import Link from 'next/link'
 
 const links = [
     {
-        title: 'Features',
+        title: 'Programs',
         href: '#',
     },
     {
-        title: 'Solution',
+        title: 'Events',
         href: '#',
     },
     {
-        title: 'Customers',
+        title: 'About YALI Lagos',
         href: '#',
     },
     {
-        title: 'Pricing',
+        title: 'Contact Us',
         href: '#',
     },
-    {
-        title: 'Help',
-        href: '#',
-    },
-    {
-        title: 'About',
-        href: '#',
-    },
+ 
 ]
 
 export default function FooterSection() {
     return (
-        <footer className="border-b bg-white py-12 dark:bg-transparent font-fredoka">
+       
+
+         <footer className=" py-12 dark:bg-primary font-fredoka">
             <div className="mx-auto max-w-5xl px-6">
                 <div className="flex flex-wrap justify-between gap-6">
-                    <span className="text-muted-foreground order-last block text-center text-sm md:order-first">© {new Date().getFullYear()} Tailark, All rights reserved</span>
+                    <span className="text-muted-foreground order-last block text-center text-sm md:order-first">© {new Date().getFullYear()} YALI Lagos Network, All rights reserved</span>
                     <div className="order-first flex flex-wrap justify-center gap-6 text-sm md:order-last">
                         {links.map((link, index) => (
                             <Link
@@ -46,5 +42,6 @@ export default function FooterSection() {
                 </div>
             </div>
         </footer>
+       
     )
 }

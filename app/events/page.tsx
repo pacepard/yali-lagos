@@ -2,7 +2,7 @@ import ContactUsSection from "@/components/blocks/contact-us";
 import { Background } from "@/components/custom/background";
 
 
-export default function AboutPage() {
+export default function EventPage() {
   return (
     <>
       <Background>
@@ -12,7 +12,7 @@ export default function AboutPage() {
             {/* Hero Content */}
             <div className="text-center">
               <h1 className="text-6xl sm:text-7xl font-bold mb-6 text-gray-900">
-                About us
+                Our Events
               </h1>
               <p className="text-xl text-gray-700">
                 Welcome to Empowered Moms, a place dedicated to supportingggg

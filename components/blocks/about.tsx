@@ -1,75 +1,116 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button'; // Assuming you have a Button component
+"use client";
 
-export default function About() {
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { motion, Variants } from "framer-motion";
+import { PlayCircle } from "@phosphor-icons/react";
+import { Button } from "@/components/ui/button";
+
+const contentVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+const mediaVariants: Variants = {
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
+  },
+};
+
+export default function AboutSection() {
+  const [playVideo, setPlayVideo] = useState(false);
+
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="container mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between">
-        <div className="lg:w-1/2 relative mb-8 lg:mb-0">
-          <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] mx-auto lg:mx-0">
-            {/* Main image - assuming it's the father and daughter */}
-            <div className="absolute top-0 left-0 w-[80%] h-[80%] z-10">
-              <Image
-                src="/father-daughter.jpg" // Replace with your image path
-                alt="Father and daughter"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg shadow-lg"
-              />
+    <section className="py-20 md:py-32 bg-white">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+          {/* Left */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            variants={contentVariants}
+            className="lg:pr-12"
+          >
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-8 h-px bg-gray-400"></div>
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest">
+                KNOW ABOUT YALI NETWORK
+              </p>
             </div>
-            {/* Second image - assuming it's the father playing with baby */}
-            <div className="absolute bottom-0 right-0 w-[60%] h-[60%] z-20 transform translate-x-4 translate-y-4">
-              <Image
-                src="/father-baby.jpg" // Replace with your image path
-                alt="Father playing with baby"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-            {/* Decorative elements */}
-            <span className="absolute top-[-20px] left-[70%] text-green-500 text-6xl rotate-45 z-0">
-              &#10003; {/* Checkmark */}
-            </span>
-            <span className="absolute bottom-[-20px] left-[-20px] text-green-500 text-6xl rotate-[120deg] z-0">
-              &#10003; {/* Checkmark */}
-            </span>
-          </div>
-        </div>
 
-        <div className="lg:w-1/2 lg:pl-16 text-center lg:text-left">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Guiding Single Mothers to Success
-          </h2>
-          <p className="text-gray-600 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
-            At Empowered Moms, we are passionate about supporting and guiding
-            single mothers on their path to success. We understand the unique
-            challenges and responsibilities that come with being a single mother,
-            and we are dedicated to empowering you to overcome obstacles and
-            unlock your full potential.
-          </p>
-          <Button asChild className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg text-lg">
-            <Link href="#learn-more">
-              Learn More
-            </Link>
-          </Button>
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6 max-w-lg">
+              We provide a place for children with special needs
+            </h2>
 
-          <div className="grid grid-cols-2 gap-8 mt-12 text-gray-700">
-            <div>
-              <p className="text-4xl font-bold">180+</p>
-              <p className="text-lg">Our complete Projects</p>
+            <p className="text-lg text-gray-600 mb-4 max-w-xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+            <p className="text-lg text-gray-600 mb-8 max-w-xl">
+              Duis cursus mi quis viverra ornare eros dolor interdum nulla.
+            </p>
+
+            <Button
+              asChild
+              size="lg"
+              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900"
+            >
+              <Link
+                href="https://yali.state.gov/network"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more
+              </Link>
+            </Button>
+          </motion.div>
+
+          {/* Right */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            variants={mediaVariants}
+            className="flex justify-center lg:justify-start"
+          >
+            <div className="relative w-full max-w-lg overflow-hidden rounded-2xl shadow-xl">
+              {/* If playing video show iframe https://youtu.be/OEAsuNHOcGY*/}
+              {playVideo ? (
+                <iframe
+                  className="w-full h-[360px]"
+                  src="https://www.youtube.com/embed/OEAsuNHOcGY?autoplay=1"
+                  title="YouTube video"
+                  allow="autoplay; encrypted media"
+                />
+              ) : (
+                <>
+                  <Image
+                    src="/blocks/yali.jpg"
+                    alt="yali network about video"
+                    width={700}
+                    height={800}
+                    className="w-full h-[400px] object-cover"
+                  />
+                  <button
+                    aria-label="Play video"
+                    onClick={() => setPlayVideo(true)}
+                    className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition"
+                  >
+                    <PlayCircle
+                      size={64}
+                      weight="fill"
+                      className="text-white/80"
+                    />
+                  </button>
+                </>
+              )}
             </div>
-            <div>
-              <p className="text-4xl font-bold">120+</p>
-              <p className="text-lg">Happy Customer</p>
-            </div>
-            <div className="col-span-2 md:col-span-1">
-              <p className="text-4xl font-bold">20+</p>
-              <p className="text-lg">International Awards</p>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

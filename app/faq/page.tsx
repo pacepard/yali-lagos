@@ -1,8 +1,8 @@
-import ContactUsSection from "@/components/blocks/contact-us";
 import { Background } from "@/components/custom/background";
+import FAQs from "@/components/faqs-section-two";
 
 
-export default function AboutPage() {
+export default function FAQPage() {
   return (
     <>
       <Background>
@@ -12,16 +12,17 @@ export default function AboutPage() {
             {/* Hero Content */}
             <div className="text-center">
               <h1 className="text-6xl sm:text-7xl font-bold mb-6 text-gray-900">
-                About us
+                FAQs
               </h1>
               <p className="text-xl text-gray-700">
-                Welcome to Empowered Moms, a place dedicated to supportingggg
+                Frequently Asked Questions about YALI Network Lagos and our initiatives.
               </p>
             
           </div>
         </div>
 
-        <ContactUsSection />
+        
+        <FAQs/>
       </Background>
     </>
   );

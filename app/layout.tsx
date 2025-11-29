@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import IHeader from "@/components/blocks/nav";
 import { siteConfig } from "@/_data/site-config";
 import { useFredoka, useNunitoSans } from "@/_data/fonts";
 import FooterSection from "@/components/custom/footer";
-
+import { HeroHeader } from "@/components/custom/header";
+import ConnectWithUs from "@/components/blocks/connect-with-us";
 
 
 export const metadata: Metadata = {
@@ -18,17 +18,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
+      suppressHydrationWarning
          className={`${useNunitoSans.className}   ${useFredoka.variable} ${useNunitoSans.variable} antialiased`}
       >
-        {/* <NavBar/> */}
-        <IHeader/>
-        {/* <HeroHeader/>
-        <Header/> */}
+    
+        <HeroHeader/>
+        
         {children}
 
-        <FooterSection/>
+        <ConnectWithUs/>
+
+
+
+  <FooterSection/>
+
+
+        
       </body>
     </html>
   );

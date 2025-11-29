@@ -11,18 +11,18 @@ export default function ConnectWithUs() {
   ];
 
   return (
-    <div className="bg-white p-8">
+    <div className="bg-white p-8 mt-20">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-4xl font-bold text-gray-800">Connect with us</h2>
           <div className="flex space-x-4">
-            <a href="#" className="p-3 bg-green-700 text-white rounded-full hover:bg-green-800 transition-colors">
+            <a href="#" className="p-3 bg-primary text-white rounded-full hover:bg-green-800 transition-colors">
               <Facebook size={20} />
             </a>
-            <a href="#" className="p-3 bg-green-700 text-white rounded-full hover:bg-green-800 transition-colors">
+            <a href="#" className="p-3 bg-primary text-white rounded-full hover:bg-green-800 transition-colors">
               <Twitter size={20} />
             </a>
-            <a href="#" className="p-3 bg-green-700 text-white rounded-full hover:bg-green-800 transition-colors">
+            <a href="#" className="p-3 bg-primary text-white rounded-full hover:bg-green-800 transition-colors">
               <Linkedin size={20} />
             </a>
           </div>

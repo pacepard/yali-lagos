@@ -1,29 +1,25 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Logo: React.FC = () => {
-
   return (
-    <Link href="/">
+    <>
       <Image
-        src="/blocks/mmdkids-logo.svg"
+        src="/blocks/yali-lagos.svg"
         alt="logo"
-        width={260}
+        width={100}
         height={100}
-        style={{ width: '300px', height: 'auto' }}
-        quality={100}
-        className='dark:hidden'
+        style={{ width: '150px', height: 'auto' }}
+        className="dark:hidden"
       />
       <Image
-        src="/blocks/mmdkids-logo.svg"
+        src="/blocks/yali-lagos.svg"
         alt="logo"
         width={260}
         height={100}
         style={{ width: 'auto', height: 'auto' }}
-        quality={100}
-        className='dark:block hidden'
+        className="dark:block hidden"
       />
-    </Link>
+    </>
   );
 };
 

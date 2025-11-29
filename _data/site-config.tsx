@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: "yoruba-preservation - learn and grow by doing",
-  title: "MasterMind Kids - Learn. Play. Grow.",
+  name: "YALI Network Lagos",
+  title: "YALI Lagos Network - The Young African Leaders Initiative (YALI)",
   description: "Caring Hands, Quality Home Care for Your Little On",
   url: "https://www.yoruba-preservation.com",
   getStartedUrl: "https://www.yoruba-preservation.com/login",

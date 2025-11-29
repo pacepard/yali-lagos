@@ -1,58 +1,37 @@
-import AboutUsHero from "@/app/about/page";
-import About from "@/components/blocks/about";
-import AboutSection from "@/components/blocks/about-us";
+import AboutSection from "@/components/blocks/about";
 import CallToAction from "@/components/blocks/call-to-action";
-import ChildCareServices from "@/components/blocks/child";
-import ConnectWithUs from "@/components/blocks/connect-with-us";
-import ContactUs from "@/components/blocks/contact-us";
-import FAQSection from "@/components/blocks/FAQs";
-import FeaturesAndServices from "@/components/blocks/features-services";
-import { HealYourselfSection } from "@/components/blocks/heal";
-import HeroSection from "@/components/blocks/hero-section";
-import MissionSection from "@/components/blocks/our-mission";
+import OurEventsSection from "@/components/blocks/events-others";
+import InclusiveCareHero from "@/components/blocks/hero-section";
+import Partners from "@/components/blocks/partners";
+import ProjectsSection from "@/components/blocks/projects";
+import WhatwedoSection from "@/components/blocks/what-we-do";
+import { Background } from "@/components/custom/background";
 
-import OurMission from "@/components/blocks/our-missionz";
-import ProcessSection from "@/components/blocks/process";
-import ServicesGrid from "@/components/blocks/seervices";
-import Testimonials from "@/components/blocks/testimonial";
+
 
 export default function Home() {
   return (
-    <div className="">
-      <HeroSection/>
+    
+    <Background>
+
+       <div className="">
+      <InclusiveCareHero />
 
       <AboutSection/>
-      
-      <MissionSection/>
-      <HealYourselfSection/>
 
-     
-      <Testimonials/>
-      <ContactUs/>
+      <Partners/>
 
-      <ConnectWithUs/>
+      <WhatwedoSection/>
 
-      <About/>
-
-      <OurMission/>
-
-      <AboutUsHero/>
+      <ProjectsSection/>
 
       <CallToAction/>
-
-      <ChildCareServices/>
-
-      <FeaturesAndServices/>
-
-      <FAQSection/>
-
-      <ProcessSection/>
-
-      <ServicesGrid/>
-
-      
-
+    
+      <OurEventsSection/>
 
     </div>
+
+    </Background>
+   
   );
 }

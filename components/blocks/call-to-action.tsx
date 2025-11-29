@@ -1,33 +1,69 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+"use client" 
+
+
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import Image from 'next/image';
+import { UsersThree, HandsClapping } from '@phosphor-icons/react'; // Import Phosphor Icons
 
 export default function CallToAction() {
   return (
-    <section className="bg-gray-100 py-16">
-      <div className="container mx-auto flex flex-col items-center justify-center lg:flex-row lg:justify-between">
-        <div className="mb-8 lg:mb-0 lg:w-1/2">
-          <Image
-            src="/blocks/child.png" // Replace with your image path
-            alt="Father and child"
-            width={700}
-            height={400}
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="bg-green-700 p-8 rounded-lg shadow-lg text-white lg:w-1/2 lg:ml-8">
-          <h2 className="text-3xl font-bold mb-4">Are You Ready to Explore More?</h2>
-          <p className="text-lg mb-6">
-            Don&apos;t miss out on more creative ideas, parenting tips, and fun activities! Stay connected with us for the latest updates and exclusive offers.
-          </p>
-          <Button asChild className="bg-yellow-400 text-green-900 hover:bg-yellow-500">
-            <Link href="#join">
-              Join Our Community <span className="ml-2">&rarr;</span>
+
+    <div className='p-20'>
+
+          <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center text-white overflow-hidden rounded-xl"
+    >
+      <div className="absolute inset-0">
+        <Image
+          src="/blocks/bg-about.png"
+          alt="Children with special needs"
+          width={1920}
+          height={1080}
+          objectFit="cover"
+          quality={90}
+          className="brightness-[0.4]"
+        />
+      </div>
+
+      <div className="relative z-10 text-center px-6 max-w-2xl">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+          className="text-3xl md:text-5xl font-bold mb-8 leading-tight"
+        >
+          You can contribute to provide a place for children with special needs!
+        </motion.h2>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.7 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+          <Button asChild className="px-8 py-6 text-lg bg-yellow-400 hover:bg-yellow-500 text-gray-900 rounded-lg shadow-lg">
+            <Link href="#join-volunteer">
+              <UsersThree size={24} weight="bold" className="mr-2" />
+              Join as a volunteer
             </Link>
           </Button>
-        </div>
+          <Button asChild variant="outline" className="px-8 py-6 text-lg bg-white hover:bg-gray-100 text-gray-900 border-none rounded-lg shadow-lg">
+            <Link href="#donate">
+              <HandsClapping size={24} weight="bold" className="mr-2" />
+              Donate
+            </Link>
+          </Button>
+        </motion.div>
       </div>
-    </section>
-  )
+    </motion.section>
+
+    </div>
+
+  );
 }
