@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { siteConfig } from "@/_data/site-config";
-import { useFredoka, useNunitoSans } from "@/_data/fonts";
+
 import FooterSection from "@/components/custom/footer";
 import { HeroHeader } from "@/components/custom/header";
 import ConnectWithUs from "@/components/blocks/connect-with-us";
+import { useMont } from "@/_data/fonts";
 
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
       suppressHydrationWarning
-         className={`${useNunitoSans.className}   ${useFredoka.variable} ${useNunitoSans.variable} antialiased`}
+         className={`${useMont.className}  ${useMont.variable} antialiased`}
       >
     
         <HeroHeader/>

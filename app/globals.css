@@ -76,8 +76,6 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-   --font-fredoka: var(--font-fredoka);
-  --font-nunito-sans: var(--font-nunito-sans);
 }
 
 .dark {
@@ -112,32 +110,12 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-   --font-fredoka: var(--font-fredoka);
-  --font-nunito-sans: var(--font-nunito-sans);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-
-  body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-nunito-sans);
-  }
-
-  .heading {
-    font-family: var(--font-fredoka);
-  }
-
-  .font-fredoka {
-  font-family: var(--font-fredoka);
-}
-
-.font-nunito {
-  font-family: var(--font-nunito-sans);
-}
-
 
 
 }

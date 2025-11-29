@@ -179,187 +179,187 @@ export default function BecomeMemberSection() {
   );
 }
 
-"use client";
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+// "use client";
+// import React from 'react';
+// import Link from 'next/link';
+// import Image from 'next/image';
+// import { motion } from 'framer-motion';
 
-// Phosphor Icons
-import { UsersThree, Shield, GraduationCap, Gavel, ArrowRight } from '@phosphor-icons/react';
+// // Phosphor Icons
+// import { UsersThree, Shield, GraduationCap, Gavel, ArrowRight } from '@phosphor-icons/react';
 
-// Assuming you have a Button component from your shadcn/ui setup
-import { Button } from '@/components/ui/button'; 
+// // Assuming you have a Button component from your shadcn/ui setup
+// import { Button } from '@/components/ui/button'; 
 
-// Framer Motion Animation Variants
-const containerVariants = {
-    hidden: {},
-    visible: {
-        transition: {
-            staggerChildren: 0.1, // Delay between children animations
-        },
-    },
-};
+// // Framer Motion Animation Variants
+// const containerVariants = {
+//     hidden: {},
+//     visible: {
+//         transition: {
+//             staggerChildren: 0.1, // Delay between children animations
+//         },
+//     },
+// };
 
-const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
+// const itemVariants = {
+//     hidden: { opacity: 0, y: 20 },
+//     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+// };
 
-const imageVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
-};
+// const imageVariants = {
+//     hidden: { opacity: 0, scale: 0.9 },
+//     visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
+// };
 
 
-export default function BecomeAMemberSection() {
-    const memberBenefits = [
-        { icon: UsersThree, text: 'Build community' },
-        { icon: Shield, text: 'Protect civil rights' },
-        { icon: GraduationCap, text: 'Support education' },
-        { icon: Gavel, text: 'Defend voting rights' },
-    ];
+// export default function BecomeAMemberSection() {
+//     const memberBenefits = [
+//         { icon: UsersThree, text: 'Build community' },
+//         { icon: Shield, text: 'Protect civil rights' },
+//         { icon: GraduationCap, text: 'Support education' },
+//         { icon: Gavel, text: 'Defend voting rights' },
+//     ];
 
-    return (
-        <section className="bg-white py-20 sm:py-32">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="flex flex-col items-center justify-center text-center">
-                    {/* Header */}
-                    <motion.div
-                        className="mb-12"
-                        variants={containerVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.1 }}
-                    >
-                        <motion.span
-                            className="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-600 ring-1 ring-inset ring-amber-600/20"
-                            variants={itemVariants}
-                        >
-                            Member
-                        </motion.span>
-                        <motion.h2
-                            className="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900"
-                            variants={itemVariants}
-                        >
-                            Become a Member
-                        </motion.h2>
-                    </motion.div>
-                </div>
+//     return (
+//         <section className="bg-white py-20 sm:py-32">
+//             <div className="mx-auto max-w-7xl px-6 lg:px-8">
+//                 <div className="flex flex-col items-center justify-center text-center">
+//                     {/* Header */}
+//                     <motion.div
+//                         className="mb-12"
+//                         variants={containerVariants}
+//                         initial="hidden"
+//                         whileInView="visible"
+//                         viewport={{ once: true, amount: 0.1 }}
+//                     >
+//                         <motion.span
+//                             className="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-600 ring-1 ring-inset ring-amber-600/20"
+//                             variants={itemVariants}
+//                         >
+//                             Member
+//                         </motion.span>
+//                         <motion.h2
+//                             className="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900"
+//                             variants={itemVariants}
+//                         >
+//                             Become a Member
+//                         </motion.h2>
+//                     </motion.div>
+//                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-                    {/* Left Content Area (Images) */}
-                    <motion.div
-                        className="relative h-[450px]"
-                        variants={imageVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
-                    >
-                        {/* Image 1 (Left, with umbrella) */}
-                        <motion.div 
-                            className="absolute left-0 top-0 w-1/2 h-full shadow-xl rounded-lg overflow-hidden"
-                            style={{ zIndex: 1 }}
-                            variants={itemVariants}
-                        >
-                            <Image
-                                src="/member-image-1.jpg" // Replace with actual path
-                                alt="People protesting for civil rights with signs"
-                                width={500}
-                                height={600}
-                                className="object-cover w-full h-full"
-                            />
-                        </motion.div>
+//                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+//                     {/* Left Content Area (Images) */}
+//                     <motion.div
+//                         className="relative h-[450px]"
+//                         variants={imageVariants}
+//                         initial="hidden"
+//                         whileInView="visible"
+//                         viewport={{ once: true, amount: 0.3 }}
+//                     >
+//                         {/* Image 1 (Left, with umbrella) */}
+//                         <motion.div 
+//                             className="absolute left-0 top-0 w-1/2 h-full shadow-xl rounded-lg overflow-hidden"
+//                             style={{ zIndex: 1 }}
+//                             variants={itemVariants}
+//                         >
+//                             <Image
+//                                 src="/member-image-1.jpg" // Replace with actual path
+//                                 alt="People protesting for civil rights with signs"
+//                                 width={500}
+//                                 height={600}
+//                                 className="object-cover w-full h-full"
+//                             />
+//                         </motion.div>
                         
-                        {/* Image 2 (Top Right, Group photo) */}
-                        <motion.div 
-                            className="absolute right-0 top-0 w-1/2 h-[50%] shadow-xl rounded-lg overflow-hidden translate-x-4 -translate-y-4"
-                            style={{ zIndex: 2 }}
-                            variants={itemVariants}
-                        >
-                            <Image
-                                src="/member-image-2.jpg" // Replace with actual path
-                                alt="Group of diverse members holding protest signs"
-                                width={500}
-                                height={300}
-                                className="object-cover w-full h-full"
-                            />
-                        </motion.div>
+//                         {/* Image 2 (Top Right, Group photo) */}
+//                         <motion.div 
+//                             className="absolute right-0 top-0 w-1/2 h-[50%] shadow-xl rounded-lg overflow-hidden translate-x-4 -translate-y-4"
+//                             style={{ zIndex: 2 }}
+//                             variants={itemVariants}
+//                         >
+//                             <Image
+//                                 src="/member-image-2.jpg" // Replace with actual path
+//                                 alt="Group of diverse members holding protest signs"
+//                                 width={500}
+//                                 height={300}
+//                                 className="object-cover w-full h-full"
+//                             />
+//                         </motion.div>
                         
-                        {/* Image 3 (Bottom Right, People marching) */}
-                        <motion.div 
-                            className="absolute right-0 bottom-0 w-1/2 h-[50%] shadow-xl rounded-lg overflow-hidden translate-x-4 translate-y-4"
-                            style={{ zIndex: 3 }}
-                            variants={itemVariants}
-                        >
-                            <Image
-                                src="/member-image-3.jpg" // Replace with actual path
-                                alt="People marching together in a parade"
-                                width={500}
-                                height={300}
-                                className="object-cover w-full h-full"
-                            />
-                        </motion.div>
-                        {/* Note: In a real app, you would need to crop and save the three distinct parts of your composite image. */}
-                    </motion.div>
+//                         {/* Image 3 (Bottom Right, People marching) */}
+//                         <motion.div 
+//                             className="absolute right-0 bottom-0 w-1/2 h-[50%] shadow-xl rounded-lg overflow-hidden translate-x-4 translate-y-4"
+//                             style={{ zIndex: 3 }}
+//                             variants={itemVariants}
+//                         >
+//                             <Image
+//                                 src="/member-image-3.jpg" // Replace with actual path
+//                                 alt="People marching together in a parade"
+//                                 width={500}
+//                                 height={300}
+//                                 className="object-cover w-full h-full"
+//                             />
+//                         </motion.div>
+//                         {/* Note: In a real app, you would need to crop and save the three distinct parts of your composite image. */}
+//                     </motion.div>
 
-                    {/* Right Content Area (Benefits) */}
-                    <motion.div
-                        className="lg:pl-12"
-                        variants={containerVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.2 }}
-                    >
-                        <motion.span
-                            className="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-600 ring-1 ring-inset ring-amber-600/20"
-                            variants={itemVariants}
-                        >
-                            Why Join with us?
-                        </motion.span>
-                        <motion.p
-                            className="mt-6 text-lg text-gray-600 max-w-lg"
-                            variants={itemVariants}
-                        >
-                            When you join the Louisville NAACP, you become part of a **powerful network fighting for justice, equality, and opportunity.**
-                        </motion.p>
+//                     {/* Right Content Area (Benefits) */}
+//                     <motion.div
+//                         className="lg:pl-12"
+//                         variants={containerVariants}
+//                         initial="hidden"
+//                         whileInView="visible"
+//                         viewport={{ once: true, amount: 0.2 }}
+//                     >
+//                         <motion.span
+//                             className="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-600 ring-1 ring-inset ring-amber-600/20"
+//                             variants={itemVariants}
+//                         >
+//                             Why Join with us?
+//                         </motion.span>
+//                         <motion.p
+//                             className="mt-6 text-lg text-gray-600 max-w-lg"
+//                             variants={itemVariants}
+//                         >
+//                             When you join the Louisville NAACP, you become part of a **powerful network fighting for justice, equality, and opportunity.**
+//                         </motion.p>
 
-                        {/* Benefits List */}
-                        <motion.div
-                            className="mt-8 grid grid-cols-2 gap-y-4 text-gray-700"
-                            variants={containerVariants}
-                        >
-                            {memberBenefits.map((benefit, index) => (
-                                <motion.div
-                                    key={index}
-                                    className="flex items-center space-x-2"
-                                    variants={itemVariants}
-                                >
-                                    <benefit.icon className="w-5 h-5 text-amber-600 flex-shrink-0" weight="bold" />
-                                    <span className="text-base">{benefit.text}</span>
-                                </motion.div>
-                            ))}
-                        </motion.div>
+//                         {/* Benefits List */}
+//                         <motion.div
+//                             className="mt-8 grid grid-cols-2 gap-y-4 text-gray-700"
+//                             variants={containerVariants}
+//                         >
+//                             {memberBenefits.map((benefit, index) => (
+//                                 <motion.div
+//                                     key={index}
+//                                     className="flex items-center space-x-2"
+//                                     variants={itemVariants}
+//                                 >
+//                                     <benefit.icon className="w-5 h-5 text-amber-600 flex-shrink-0" weight="bold" />
+//                                     <span className="text-base">{benefit.text}</span>
+//                                 </motion.div>
+//                             ))}
+//                         </motion.div>
                         
-                        {/* Join Now Button */}
-                        <motion.div
-                            className="mt-10"
-                            variants={itemVariants}
-                        >
-                            <Button
-                                asChild
-                                size="lg"
-                                className="inline-flex items-center justify-center rounded-full bg-amber-400 text-gray-900 hover:bg-amber-500 transition-colors h-12 px-6 py-3 font-semibold group"
-                            >
-                                <Link href="#join-form" className="flex items-center gap-2">
-                                    <span className="text-nowrap">Join Now</span>
-                                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" weight="bold" />
-                                </Link>
-                            </Button>
-                        </motion.div>
-                    </motion.div>
-                </div>
-            </div>
-        </section>
-    );
-}
+//                         {/* Join Now Button */}
+//                         <motion.div
+//                             className="mt-10"
+//                             variants={itemVariants}
+//                         >
+//                             <Button
+//                                 asChild
+//                                 size="lg"
+//                                 className="inline-flex items-center justify-center rounded-full bg-amber-400 text-gray-900 hover:bg-amber-500 transition-colors h-12 px-6 py-3 font-semibold group"
+//                             >
+//                                 <Link href="#join-form" className="flex items-center gap-2">
+//                                     <span className="text-nowrap">Join Now</span>
+//                                     <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" weight="bold" />
+//                                 </Link>
+//                             </Button>
+//                         </motion.div>
+//                     </motion.div>
+//                 </div>
+//             </div>
+//         </section>
+//     );
+// }

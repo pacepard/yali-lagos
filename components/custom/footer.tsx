@@ -25,7 +25,7 @@ export default function FooterSection() {
     return (
        
 
-         <footer className=" py-12 dark:bg-primary font-fredoka">
+         <footer className=" py-12 dark:bg-primary">
             <div className="mx-auto max-w-5xl px-6">
                 <div className="flex flex-wrap justify-between gap-6">
                     <span className="text-muted-foreground order-last block text-center text-sm md:order-first">© {new Date().getFullYear()} YALI Lagos Network, All rights reserved</span>
