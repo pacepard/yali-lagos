@@ -77,24 +77,69 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, subtitle, description,
 export default function ProjectsSection() {
   const projects = [
     {
-      title: 'Mission smile 1k:',
-      subtitle: 'Outdoor charity',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.',
-      imageSrc: '/blocks/hero-image.png', // Ploceholder for the middle image
+      title: 'Career Benchmark Masterclass.',
+      subtitle: 'Rewriting the Rules.',
+      description: `Young African Leaders Initiative(YALI) Network Lagos in partnership with IHTIL Coaching successfully organised 2days Career Benchmark Masterclass titled; “Rewriting the Rules” which was held on the 9th and 10th of October at American Corner Lekki.
+
+The masterclass empowered over 30 youths with employability skills, Résumé writing, interview skills and use of some office tools like Microsoft Word, excel, google forms, e-mail and others. This training was borne out of the organisations understanding of the causes of the high rate of unemployment in Nigeria and their willingness to proffer solutions to them. The training also equipped young entrepreneurs with relevant skills to succeed in the business world.
+
+Outstanding and accomplished facilitators were invited to train the participants. The participants were taken through practical exercises that sharpened their skills for efficient performance at work. Emphasis was also placed on soft and hard skills which are both essential for success at the workplace. 
+
+The team lead of IHTIL Coaching Ginika Obinna Okorie took the participants through some sessions and advised them to be mentally ready to achieve success at their various places of work. The coordinator of YALI Network Lagos, Mr. Ojo Semasa advised the participants to put into practice every bit of knowledge they've acquired during the training. He emphasised that it's not enough to attend trainings and bootcamp until the knowledge and skills acquired are put to use.
+
+The training ended with an assessment of each of the participants and feedback from the assessors then certification of successful participants. Members of the organising team that made the project a success are Olumide Hamzat, Adeyemi Oluwabunmi, Goldy Godfrey, Elisha Oghenekevbe Umukoro and Jesse Nosike-Imala.
+
+Both organisations reiterate their commitment to keep working together to equip young Nigerians with needed skills to get dream jobs and succeed at the various places of work.
+
+Ojo Semasa 
+Coordinator 
+YNL.`,
+      imageSrc: '/blocks/yali-masterclass.jpeg', // Ploceholder for the middle image
       altText: 'Smiling children in an outdoor charity event.',
     },
     {
-      title: 'Weekly excursions',
-      subtitle: 'Educational activities',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Suspendisse varius enim elementum tristique.',
-      imageSrc: '/blocks/hero-image.png', // Ploceholder for the middle image
+      title: 'July Intending Members Project',
+      subtitle: 'Motorist Refuse Disposal Campaign',
+      description: `This trailblazing initiative stands out as one of the most impactful projects by any cohort this year.
+
+Highlights
+
+Installed 20+ mini trash bins inside buses at Makoko Garage, Yaba
+
+Carried out a clean-up exercise in the area.
+
+Recorded an amazing campaign video that will be available later this week.
+
+Donated a large waste bin to further promote cleanliness
+
+
+The NURTW representative present commended the team, describing the initiative as a transformative step towards ensuring Lagos roads remain clean and free from litter.
+
+Kudos to our July Cohort for this inspiring effort towards a cleaner and healthier community
+
+Adeyemi Oluwabunmi
+Cohort Manager 
+For Programs committee YALI Network Lagos`,
+      imageSrc: '/blocks/Yali-july members.jpeg', // Ploceholder for the middle image
       altText: 'Group of people on an excursion.',
     },
     {
-      title: 'Monthly public awareness',
-      subtitle: 'Community outreach',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.',
-      imageSrc: '/blocks/hero-image.png', // Ploceholder for the middle image
+      title: 'Community Medical outreach',
+      subtitle: 'YALI Lagos medical checkups & food distribution program',
+      description: `On Saturday, 28th June 2025, YALI Network Lagos, in collaboration with some partner organizations, successfully held a community medical outreach in Oshodi, Lagos. The outreach aimed to provide essential health and welfare services to underserved members of the community, and it turned out to be a remarkable success.
+
+During the outreach, we were able to reach almost 200 individuals, offering them free medical consultations, drug prescriptions and distributions, vitals checks (such as blood pressure and temperature), as well as nutritious meals. The outreach provided critical access to healthcare for individuals who may otherwise not be able to afford or access these basic services, and it served as a platform to engage the community in conversations about wellness and preventive health.
+
+This outreach would not have been possible without the tireless commitment and support of our volunteers from YALI Network Lagos. From medical checkups to food distribution, our members displayed a level of dedication and passion that truly defines what it means to lead and serve. The energy, efficiency, and teamwork exhibited, especially by the medical and welfare teams, were nothing short of inspiring. As one observer aptly put it, “YALI Network Lagos volunteers carried the whole medical and welfare on their head like it’s a market.” That humorous expression captures the spirit, strength, and zeal with which our team served the community.
+
+We deeply appreciate every single volunteer who contributed to this effort, your impact was deeply felt, and your commitment did not go unnoticed. You are the real MVPs, and your actions continue to uphold the values and vision of YALI Network Lagos. It’s important to remember that YALI Network Lagos is not a building or a brand; it is the people, it is you. Without each and every one of you, this network does not exist. You all are YALI Network Lagos.
+
+As we look ahead, we are excited about the many other meaningful and transformative projects that are already in the pipeline. We will continue to count on your active involvement, your time, your skills, and your hearts. Together, we are building something powerful, a network that truly lives up to its mission of empowering young leaders and driving positive change in our communities.
+
+YALI Network Lagos shall never be small, and none of us shall ever be small. 
+
+Thank you once again for being part of something impactful, for showing up, and for standing up for humanity through service.`,
+      imageSrc: '/blocks/Yali-medical outreach.jpeg', // Ploceholder for the middle image
       altText: 'A group attending a public awareness meeting.',
     },
   ];
@@ -115,7 +160,7 @@ export default function ProjectsSection() {
             PROJECTS WE HAVE DONE
           </p>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
-            We are creating a place where children with special needs can thrive
+            We are a diverse community delivering impactful projects that empower young Nigerians to thrive.
           </h2>
         </motion.div>
 

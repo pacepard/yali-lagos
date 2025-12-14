@@ -67,23 +67,23 @@ export default function WhatwedoSection() {
     const services = [
         {
             icon: Users,
-            title: 'Family support',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
+            title: 'Leadership Development:',
+            description: 'Training and mentorship to build ethical, visionary leaders.',
         },
         {
             icon: FirstAid, // Changed from Health benefits to FirstAid for a clearer icon
-            title: 'Health benefits',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
+            title: 'Civic Engagement',
+            description: 'Promoting active citizenship, volunteerism, advocacy for good governance and community engagement. ',
         },
         {
             icon: GraduationCap,
-            title: 'Scholarships',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
+            title: 'Entrepreneurship & Innovation',
+            description: 'Supporting creative ideas, startups, and sustainable businesses that drive economic growth.',
         },
         {
             icon: Brain, // Changed from Therapy to Brain for a clearer icon representing mental/cognitive support
-            title: 'Therapy',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
+            title: 'Community Impact Projects:',
+            description: 'Tackling local challenges through education, health, environment, and social development initiatives.',
         },
     ];
 
@@ -105,11 +105,11 @@ export default function WhatwedoSection() {
                         </motion.div>
 
                         <motion.h2 variants={itemVariants} className="text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
-                            Some services we provide for our children
+                            YALI LAGOS NETWORK key area of focus.
                         </motion.h2>
 
                         <motion.p variants={itemVariants} className="text-lg text-gray-700 max-w-md mb-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                             We are young leaders working together to create a better Nigeria.
                         </motion.p>
 
                         <div className="space-y-8">
@@ -130,7 +130,7 @@ export default function WhatwedoSection() {
                         className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl"
                     >
                         <Image
-                            src="/blocks/hero-image.png" // You'll need to replace this with your actual image path
+                            src="/blocks/what we do.jpeg" // You'll need to replace this with your actual image path
                             alt="Child with headphones"
                             layout="fill"
                             objectFit="cover"

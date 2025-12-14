@@ -105,11 +105,11 @@ export default function ServicesSection() {
                         </motion.div>
 
                         <motion.h2 variants={itemVariants} className="text-6xl font-medium text-gray-900 leading-tight mb-6">
-                            Some services we provide for our children
+                            YALI LAGOS NETWORK key area of focus.
                         </motion.h2>
 
                         <motion.p variants={itemVariants} className="text-lg text-gray-700 max-w-md mb-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                               We are young leaders working together to create a better Nigeria.
                         </motion.p>
 
                         <div className="space-y-8">

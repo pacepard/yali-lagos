@@ -17,11 +17,11 @@ export default function CallToAction() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center text-white overflow-hidden rounded-xl"
+      className="relative w-full h-[10vh] md:h-[50vh] flex items-center justify-center text-white overflow-hidden rounded-xl"
     >
       <div className="absolute inset-0">
         <Image
-          src="/blocks/bg-about.png"
+          src="/blocks/Join-yali.jpeg"
           alt="Children with special needs"
           width={1920}
           height={1080}
@@ -38,7 +38,8 @@ export default function CallToAction() {
           transition={{ delay: 0.3, duration: 0.7 }}
           className="text-3xl md:text-5xl font-bold mb-8 leading-tight"
         >
-          You can contribute to provide a place for children with special needs!
+          Join YALI Network Lagos today.
+Be part of a movement for change.
         </motion.h2>
 
         <motion.div
