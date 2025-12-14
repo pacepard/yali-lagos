@@ -76,15 +76,15 @@ export default function ContactUsSection() {
     const contactInfo = [
         {
             label: 'Email',
-            value: 'hello@largerthani.com',
-            href: 'hello@largerthani.com',
+            value: 'yalinetworklagos@gmail.com',
+            href: 'yalinetworklagos@gmail.com',
             icon: EnvelopeSimple,
             type: 'email' as const,
         },
         {
             label: 'Phone',
-            value: '+234 09012346514',
-            href: '+23409012346514',
+            value: '+234 703 686 5403',
+            href: '+234 703 686 5403',
             icon: Phone,
             type: 'phone' as const,
         },
@@ -116,11 +116,11 @@ export default function ContactUsSection() {
             viewport={{ once: true, amount: 0.2 }}
             variants={containerVariants}
         >
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div className="mx-auto max-w-5xl px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
                     {/* Left Content: Intro Text */}
                     <div className="md:pr-12">
-                        <motion.h2 variants={itemVariants} className="text-6xl font-medium text-gray-900 leading-tight mb-6">
+                        <motion.h2 variants={itemVariants} className="text-3xl md:text-6xl font-semibold text-gray-900 leading-tight mb-6">
                             We'd love to hear from you
                         </motion.h2>
 
@@ -157,7 +157,7 @@ export default function ContactUsSection() {
                             <motion.div variants={itemVariants}>
                                 <h4 className="text-xl font-semibold text-gray-900 mb-2">{headOffice.label}</h4>
                                 <div className="flex items-start gap-2 text-lg text-gray-700">
-                                    <headOffice.icon weight="bold" className="w-5 h-5 mt-1 text-primary-600 flex-shrink-0" />
+                                    <headOffice.icon weight="bold" className="w-5 h-5 mt-1 text-primary-600 shrink-0" />
                                     <p className="max-w-xs">{headOffice.value}</p>
                                 </div>
                             </motion.div>
@@ -165,7 +165,7 @@ export default function ContactUsSection() {
                             <motion.div variants={itemVariants}>
                                 <h4 className="text-xl font-semibold text-gray-900 mb-2">{branchOffice.label}</h4>
                                 <div className="flex items-start gap-2 text-lg text-gray-700">
-                                    <branchOffice.icon weight="bold" className="w-5 h-5 mt-1 text-primary-600 flex-shrink-0" />
+                                    <branchOffice.icon weight="bold" className="w-5 h-5 mt-1 text-primary-600 shrink-0" />
                                     <p className="max-w-xs">{branchOffice.value}</p>
                                 </div>
                             </motion.div>
@@ -173,13 +173,16 @@ export default function ContactUsSection() {
 
                         {/* Social Icons */}
                         <motion.div className="flex gap-4 pt-4" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} variants={containerVariants}>
-                            {socialLinks.map((social, index) => (
-                                <motion.div key={index} variants={socialIconVariants}>
-                                    <Link href={social.href} passHref aria-label={social.icon.displayName || 'Social Link'}>
-                                        <social.icon weight="fill" className="w-6 h-6 text-gray-600 hover:text-primary transition-colors" />
-                                    </Link>
-                                </motion.div>
-                            ))}
+                            {socialLinks.map((social, index) => {
+                                const Icon = social.icon;
+                                return (
+                                    <motion.div key={index} variants={socialIconVariants}>
+                                        <Link href={social.href} aria-label={Icon.displayName || 'Social Link'} className="text-gray-600 hover:text-primary transition-colors">
+                                            <Icon weight="fill" className="w-6 h-6" />
+                                        </Link>
+                                    </motion.div>
+                                );
+                            })}
                         </motion.div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ export default function ContactPage() {
                 Contact Us
               </h1>
               <p className="text-xl text-gray-700">
-                Welcome to Empowered Moms, a place dedicated to supportingggg
+                Welcome to YALI Network Lagos. Where impact is our benchmark.
               </p>
             
           </div>

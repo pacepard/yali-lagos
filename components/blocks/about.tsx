@@ -44,15 +44,15 @@ export default function AboutSection() {
             </div>
 
             <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6 max-w-lg">
-              We provide a place for children with special needs
+              Welcome To Yali Network Lagos.
             </h2>
 
             <p className="text-lg text-gray-600 mb-4 max-w-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Inspiring Leaders. Building Tomorrow.
             </p>
 
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
-              Duis cursus mi quis viverra ornare eros dolor interdum nulla.
+              Shaping Africa’s future through youth leadership, innovation, and civic action.
             </p>
 
             <Button

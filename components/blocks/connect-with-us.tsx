@@ -4,10 +4,10 @@ import { Facebook, Twitter, Linkedin } from 'lucide-react';
 
 export default function ConnectWithUs() {
   const images = [
-    { src: '/blocks/child.png', alt: 'Happy child 1' },
-    { src: '/blocks/child.png', alt: 'Happy child 2' },
-    { src: '/blocks/child.png', alt: 'Happy child 3' },
-    { src: '/blocks/child.png', alt: 'Happy child 4' },
+    { src: '/blocks/yali-work.jpeg', alt: 'yali work' },
+    { src: '/blocks/yali-impact.jpeg', alt: 'yali impact' },
+    { src: '/blocks/yali-capacity.jpeg', alt: 'yali capacity' },
+    { src: '/blocks/yali-inclusive.jpeg', alt: 'yali inclusive' },
   ];
 
   return (
