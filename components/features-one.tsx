@@ -6,7 +6,7 @@ import { Card } from '@/components/ui/card'
 export default function Abouts() {
     return (
         <section>
-            <div className="bg-muted/50 py-12 md:py-24">
+            <div className=" py-0 md:py-0 mt-0 bg-muted/70">
                 <div className="mx-auto w-full max-w-5xl px-6">
                     <div>
                         <h2 className="text-foreground text-4xl font-semibold text-center">Impact Driven</h2>
@@ -15,7 +15,7 @@ export default function Abouts() {
                         </div>
                     </div>
 
-                    <div className="border-foreground/10 relative mt-16 grid gap-12 border-b pb-12 [--radius:1rem] md:grid-cols-2">
+                    <div className="p-0 py-0 md:py 0 border-foreground/10 relative mt-0 grid gap-12 border-b pb-12 [--radius:1rem] md:grid-cols-2">
                         <div>
                             <h3 className="text-foreground text-xl font-semibold">Marketing Campaigns</h3>
                             <p className="text-muted-foreground my-4 text-lg">Effortlessly plan and execute your marketing campaigns organized.</p>
