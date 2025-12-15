@@ -121,7 +121,7 @@ export default function ContactUsSection() {
                     {/* Left Content: Intro Text */}
                     <div className="md:pr-12">
                         <motion.h2 variants={itemVariants} className="text-3xl md:text-6xl font-semibold text-gray-900 leading-tight mb-6">
-                            We'd love to hear from you
+                            We&apos;d love to hear from you
                         </motion.h2>
 
                         <motion.p variants={itemVariants} className="text-lg text-gray-700 max-w-md">
@@ -134,7 +134,7 @@ export default function ContactUsSection() {
                     <div className="flex flex-col space-y-8">
                         {/* Let's Talk Section */}
                         <motion.div variants={itemVariants}>
-                            <h3 className="text-3xl font-semibold text-gray-900 mb-4">Let's talk!</h3>
+                            <h3 className="text-3xl font-semibold text-gray-900 mb-4">Let&apos;s talk!</h3>
                             
                             {contactInfo.map((item) => (
                                 <Link
