@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { PlayCircle, CaretRight } from '@phosphor-icons/react'; // Using Phosphor Icons
 
+
 export default function AboutUsSection() {
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },

@@ -1,5 +1,5 @@
-import ContactUsSection from "@/components/blocks/contact-us";
 import { Background } from "@/components/custom/background";
+import Abouts from "@/components/features-one";
 
 
 export default function ProgramsPage() {
@@ -21,8 +21,9 @@ export default function ProgramsPage() {
             
           </div>
         </div>
-
-        <ContactUsSection />
+         
+         <Abouts />
+      
       </Background>
     </>
   );

@@ -20,7 +20,9 @@ import SpecialNeedsFeatures from "@/components/blocks/test";
 import TimesWeveSpent from "@/components/blocks/time";
 import BecomeAVolunteerSection from "@/components/blocks/volunteer";
 import CrossCountryWorkSection from "@/components/blocks/what-we-doo";
-
+import Abouts from "@/components/features-one";
+import FeaturesSection3 from "@/components/features-three";
+import TeamSection1 from "@/components/team";
 
 export default function Preview() {
   return (
@@ -74,6 +76,12 @@ export default function Preview() {
       <BecomeAVolunteerSection/>
 
       <CrossCountryWorkSection/>
+
+      <Abouts/>
+
+      <FeaturesSection3/>
+
+      <TeamSection1/>
 
 
     </div>
