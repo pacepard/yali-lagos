@@ -7,7 +7,7 @@ export default function ProgramsPage() {
     <>
       <Background>
         
-        <div className="container flex min-h-[50vh] flex-col items-center justify-center text-center">
+        <div className="pt-20 pb-10 container flex min-h-[50vh] flex-col items-center justify-center text-center">
           
             {/* Hero Content */}
             <div className="text-center">

@@ -5,7 +5,7 @@ import TeamSection1 from "@/components/team";
 export default function AboutPage() {
   return (
     <Background>
-      <div className="container flex min-h-[50vh] flex-col items-center justify-center text-center">
+      <div className="pt-20 pb-10 container flex min-h-[50vh] flex-col items-center justify-center text-center">
         {/* Hero Content */}
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-gray-900">
