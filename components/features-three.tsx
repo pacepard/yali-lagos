@@ -12,7 +12,7 @@ export default function FeaturesSections() {
             <div className="p-0 py-0 md:py-0 mt-0 bg-muted/70">
                 <div className="mx-auto w-full max-w-5xl px-6">
                     <div>
-                        <h2 className=" p-5 text-foreground mt-4 text-center text-4xl font-semibold">Who We Are</h2>
+                        <h2 className=" pt-10 text-foreground mt-4 text-center text-4xl font-semibold">Who We Are</h2>
                         <p className="text-muted-foreground text-center mb-12 mt-4 text-balance text-lg">YALI Lagos Hub strengthens youth leadership and community impact across Lagos as part of Nigeria. With over 1,000 members, the hub delivers impactful programs promoting civic engagement and youth development.</p>
                     </div>
 
