@@ -8,7 +8,7 @@ export default function AboutPage() {
       <div className="pt-20 pb-10 container flex min-h-[50vh] flex-col items-center justify-center text-center">
         {/* Hero Content */}
         <div className="text-center">
-          <h1 className="text-6xl sm:text-7xl font-bold mb-6 text-gray-900">
+          <h1 className="text-2xl sm:text-4xl font-bold mb-6 text-gray-900">
             About us
           </h1>
           <p className="text-xl text-gray-700">

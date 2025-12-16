@@ -11,10 +11,10 @@ export default function EventPage() {
           
             {/* Hero Content */}
             <div className="text-center">
-              <h1 className="text-6xl sm:text-7xl font-bold mb-6 text-gray-900">
+              <h1 className="text-2xl sm:text-4xl font-bold mb-6 text-gray-900">
                 Our Events
               </h1>
-              <p className="text-xl text-gray-700">
+              <p className="text-l text-gray-700">
                  Welcome to YALI Network Lagos. Where impact is our benchmark.
               </p>
             

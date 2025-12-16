@@ -9,7 +9,7 @@ export default function Abouts() {
             <div className=" py-0 md:py-0 mt-0 bg-muted/70">
                 <div className="mx-auto w-full max-w-5xl px-6">
                     <div>
-                        <h2 className="p-5 text-foreground text-4xl font-semibold text-center">Impact Driven</h2>
+                        <h2 className="p-5 text-foreground text-2xl sm:text-4xl font-semibold text-center">Impact Driven</h2>
                          <p className="text-muted-foreground mb-12 mt-4 text-balance text-lg text-center">YALI Network Lagos is a vibrant community of young changemakers committed to shaping a better Nigeria and Africa through leadership, civic participation, entrepreneurship, and innovation. As part of the U.S. Government’s Young African Leaders Initiative (YALI), our network empowers youth with knowledge, resources, and opportunities to lead impactful projects and transform their communities.</p>
                         <div className="bg-foreground/5 rounded-3xl p-6">
                         </div>

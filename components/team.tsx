@@ -45,7 +45,7 @@ export default function TeamSection1() {
                 <span className="text-caption -ml-6 -mt-3.5 block w-max bg-gray-50 px-6 dark:bg-gray-950">Team</span>
                 <div className="mt-12 gap-4 sm:grid sm:grid-cols-2 md:mt-24">
                     <div className="max-w-xl">
-                        <h2 className="text-5xl font-bold sm:text-4xl">Our dream team</h2>
+                        <h2 className="font-bold text-2xl sm:text-4xl">Our dream team</h2>
                     </div>
                     <br />
                     <div className="max-w-lg text-gray-600 dark:text-gray-400">

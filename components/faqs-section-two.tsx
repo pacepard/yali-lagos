@@ -39,7 +39,7 @@ export default function FAQs() {
                     <div className="md:col-span-2">
                         <p className="text-muted-foreground mt-4 text-balance text-lg">Your questions answered</p>
                         <p className="text-muted-foreground mt-6 hidden md:block">
-                            Can't find what you're looking for? Contact our{' '}
+                            Can not find what you are looking for? Contact our{' '}
                             <Link
                                 href="#"
                                 className="text-primary font-medium hover:underline">
@@ -66,7 +66,7 @@ export default function FAQs() {
                     </div>
 
                     <p className="text-muted-foreground mt-6 md:hidden">
-                        Can't find what you're looking for? Contact our{' '}
+                        Can not find what you are looking for? Contact our{' '}
                         <Link
                             href="#"
                             className="text-primary font-medium hover:underline">

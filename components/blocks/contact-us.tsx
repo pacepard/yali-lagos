@@ -120,11 +120,11 @@ export default function ContactUsSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
                     {/* Left Content: Intro Text */}
                     <div className="md:pr-12">
-                        <motion.h2 variants={itemVariants} className="text-3xl md:text-6xl font-semibold text-gray-900 leading-tight mb-6">
+                        <motion.h2 variants={itemVariants} className="text-2xl sm:text-4xl md:text-6xl font-semibold text-gray-900 leading-tight mb-6">
                             We&apos;d love to hear from you
                         </motion.h2>
 
-                        <motion.p variants={itemVariants} className="text-lg text-gray-700 max-w-md">
+                        <motion.p variants={itemVariants} className="text-x text-gray-700 max-w-md">
                             Have any question in mind or want to enquire? Please feel free to contact us through the form or the following details.
                         </motion.p>
                         {/* You might add a form element here if needed, animated similarly */}
@@ -134,7 +134,7 @@ export default function ContactUsSection() {
                     <div className="flex flex-col space-y-8">
                         {/* Let's Talk Section */}
                         <motion.div variants={itemVariants}>
-                            <h3 className="text-3xl font-semibold text-gray-900 mb-4">Let&apos;s talk!</h3>
+                            <h3 className="text-x font-semibold text-gray-900 mb-4">Let&apos;s talk!</h3>
                             
                             {contactInfo.map((item) => (
                                 <Link
@@ -143,7 +143,7 @@ export default function ContactUsSection() {
                                     passHref
                                     className="block group"
                                 >
-                                    <div className="flex items-center gap-2 text-xl text-gray-700 hover:text-primary transition-colors py-1">
+                                    <div className="flex items-center gap-2 text-x text-gray-700 hover:text-primary transition-colors py-1">
                                         <item.icon weight="bold" className="w-6 h-6 text-primary-600" />
                                         <span>{item.value}</span>
                                     </div>
@@ -155,7 +155,7 @@ export default function ContactUsSection() {
                         {/* Offices Section */}
                         <div className="space-y-6">
                             <motion.div variants={itemVariants}>
-                                <h4 className="text-xl font-semibold text-gray-900 mb-2">{headOffice.label}</h4>
+                                <h4 className="text-x font-semibold text-gray-900 mb-2">{headOffice.label}</h4>
                                 <div className="flex items-start gap-2 text-lg text-gray-700">
                                     <headOffice.icon weight="bold" className="w-5 h-5 mt-1 text-primary-600 shrink-0" />
                                     <p className="max-w-xs">{headOffice.value}</p>
@@ -163,7 +163,7 @@ export default function ContactUsSection() {
                             </motion.div>
 
                             <motion.div variants={itemVariants}>
-                                <h4 className="text-xl font-semibold text-gray-900 mb-2">{branchOffice.label}</h4>
+                                <h4 className="text-x font-semibold text-gray-900 mb-2">{branchOffice.label}</h4>
                                 <div className="flex items-start gap-2 text-lg text-gray-700">
                                     <branchOffice.icon weight="bold" className="w-5 h-5 mt-1 text-primary-600 shrink-0" />
                                     <p className="max-w-xs">{branchOffice.value}</p>

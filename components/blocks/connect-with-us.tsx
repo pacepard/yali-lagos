@@ -14,7 +14,7 @@ export default function ConnectWithUs() {
     <div className="bg-white p-8 mt-20">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-4xl font-bold text-gray-800">Connect with us</h2>
+          <h2 className="text-2xl sm:text-4xl font-bold text-gray-800">Connect with us</h2>
           <div className="flex space-x-4">
             <a href="#" className="p-3 bg-primary text-white rounded-full hover:bg-green-800 transition-colors">
               <Facebook size={20} />
