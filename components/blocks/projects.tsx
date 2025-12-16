@@ -159,7 +159,7 @@ Thank you once again for being part of something impactful, for showing up, and 
           <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-2">
             PROJECTS WE HAVE DONE
           </p>
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground leading-tight">
             We are a diverse community delivering impactful projects that empower young Nigerians to thrive.
           </h2>
         </motion.div>

@@ -104,7 +104,7 @@ export default function WhatwedoSection() {
                             <p className="text-sm font-semibold uppercase tracking-widest text-black">WHAT WE DO</p>
                         </motion.div>
 
-                        <motion.h2 variants={itemVariants} className="text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
+                        <motion.h2 variants={itemVariants} className="text-2xl sm:text-4xl font-extrabold text-foreground leading-tight">
                             YALI LAGOS NETWORK key area of focus.
                         </motion.h2>
 

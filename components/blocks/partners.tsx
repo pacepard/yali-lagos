@@ -3,54 +3,64 @@ import Image from "next/image";
 export default function Partners() {
     return (
         <section>
-            <div className="mx-auto max-w-7xl px-6 py-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
                 <div>
                     <p className="text-muted-foreground font-medium">Sponsors and partners :</p>
-                    <div className="mt-4 flex items-center gap-12">
-                        <div className="flex">
-                            <Image
-                                className="mx-auto h-15 w-fit"
-                                src="/blocks/consulate.svg"
-                                alt="Nvidia Logo"
-                                height="16"
-                                width="20"
-                            />
-                        </div>
-                         <div className="flex">
-                            <Image
-                                className="mx-auto h-15 w-fit"
-                               src="/blocks/mwf.svg"
-                                alt="Column Logo"
-                                height="16"
-                                width="20"
-                            />
-                        </div>
 
+                    {/* Responsive grid */}
+                    <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 sm:gap-12 items-center justify-items-center">
                         <div className="flex">
                             <Image
-                                className="mx-auto h-15 w-fit"
-                               src="/blocks/rlc.svg"
-                                alt="Column Logo"
-                                height="16"
-                                width="20"
+                                src="/blocks/consulate.svg"
+                                alt="Consulate Logo"
+                                height={60}
+                                width={120}
+                                className="object-contain"
                             />
                         </div>
                         <div className="flex">
                             <Image
-                                className="mx-auto h-15 w-fit"
-                               src="/blocks/corner.svg"
-                                alt="GitHub Logo"
-                                height="16"
-                                width="20"
+                                src="/blocks/mwf.svg"
+                                alt="MWF Logo"
+                                height={60}
+                                width={120}
+                                className="object-contain"
                             />
                         </div>
                         <div className="flex">
                             <Image
-                                className="mx-auto h-15 w-fit"
+                                src="/blocks/rlc.svg"
+                                alt="RLC Logo"
+                                height={60}
+                                width={120}
+                                className="object-contain"
+                            />
+                        </div>
+                        <div className="flex">
+                            <Image
+                                src="/blocks/corner.svg"
+                                alt="Corner Logo"
+                                height={60}
+                                width={120}
+                                className="object-contain"
+                            />
+                        </div>
+                        <div className="flex">
+                            <Image
+                                src="/blocks/pacepard-logo.svg"
+                                alt="Pacepard Logo"
+                                height={60}
+                                width={120}
+                                className="object-contain"
+                            />
+                        </div>
+                        <div className="flex">
+                            <Image
                                 src="/blocks/learners.svg"
-                                alt="Nike Logo"
-                                height="16"
-                                width="20"
+                                alt="Learners Logo"
+                                height={60}
+                                width={120}
+                                className="object-contain"
                             />
                         </div>
                     </div>

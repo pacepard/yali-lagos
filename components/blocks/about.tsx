@@ -43,7 +43,7 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6 max-w-lg">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-6 max-w-lg">
               Welcome To Yali Network Lagos.
             </h2>
 
