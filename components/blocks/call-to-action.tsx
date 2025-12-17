@@ -14,7 +14,7 @@ export default function CallToAction() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative w-full min-h-[45vh] sm:min-h-[60vh] flex items-center justify-center text-white overflow-hidden rounded-xl"
+        className="relative w-full min-h-[35vh] sm:min-h-[50vh] flex items-center justify-center text-white overflow-hidden rounded-xl"
       >
         {/* Background Image */}
         <div className="absolute inset-0">
@@ -34,11 +34,9 @@ export default function CallToAction() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="text-xl sm:text-3xl md:text-4xl font-bold mb-6 leading-tight"
+            className="text-x sm:text-3xl md:text-4xl font-bold mb-6 leading-tight"
           >
             Join YALI Network Lagos today.
-            <br />
-            Be part of a movement for change.
           </motion.h2>
 
           <motion.div

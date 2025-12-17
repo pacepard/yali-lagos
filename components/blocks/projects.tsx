@@ -53,7 +53,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, subtitle, description,
 
       {/* Card Content */}
       <div className="relative flex h-full flex-col justify-end p-6 text-white">
-        <h3 className="text-sm font-light uppercase tracking-widest text-white/80">{subtitle}</h3>
+        <h3 className="  text-l font-bold uppercase tracking-widest text-white/80">{subtitle}</h3>
         <h2 className="mb-2 text-2xl font-bold leading-tight">{title}</h2>
         <p className="mb-6 line-clamp-3 text-sm text-white/90">{description}</p>
 
