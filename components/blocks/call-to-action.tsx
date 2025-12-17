@@ -34,7 +34,7 @@ export default function CallToAction() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="text-x sm:text-3xl md:text-4xl font-bold mb-6 leading-tight"
+            className="text-xl sm:text-4xl md:text-5xl font-bold mb-5 leading-tight"
           >
             Join YALI Network Lagos today.
           </motion.h2>
