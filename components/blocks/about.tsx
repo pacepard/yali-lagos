@@ -23,6 +23,8 @@ const mediaVariants: Variants = {
 
 export default function AboutSection() {
   const [playVideo, setPlayVideo] = useState(false);
+  
+
 
   return (
     <section className="py-20 md:py-32 bg-white">
