@@ -15,12 +15,24 @@ export default function InclusiveCareHero() {
   // Array of hero images - you can add more images here
   const heroImages = [
     {
-      src: "/blocks/hero-image.jpeg",
+      src: "/blocks/ynl-img1.jpeg",
       alt: "Children reaching out to camera"
     },
     {
-      src: "/blocks/hero-image.png", 
-      alt: "Youth empowerment program"
+      src: "/blocks/ynl-img3.jpeg", 
+      alt: "Youth community service"
+    },
+     {
+      src: "/blocks/ynl-img4.jpeg", 
+      alt: "Service to humanity"
+    },
+     {
+      src: "/blocks/ynl-img5.jpeg", 
+      alt: "Youth impact initiative"
+    },
+    {
+      src: "/blocks/ynl-img2.jpeg", 
+      alt: "Youth impact initiative"
     }
   ];
 

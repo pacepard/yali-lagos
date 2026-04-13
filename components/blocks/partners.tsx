@@ -20,7 +20,7 @@ export default function Partners() {
                         </div>
                         <div className="flex">
                             <Image
-                                src="/blocks/mwf.svg"
+                                src="/blocks/usmission.svg"
                                 alt="MWF Logo"
                                 height={60}
                                 width={120}
@@ -29,8 +29,8 @@ export default function Partners() {
                         </div>
                         <div className="flex">
                             <Image
-                                src="/blocks/rlc.svg"
-                                alt="RLC Logo"
+                                src="/blocks/mirrow.svg"
+                                alt="Mirrow Logo"
                                 height={60}
                                 width={120}
                                 className="object-contain"
@@ -54,7 +54,7 @@ export default function Partners() {
                                 className="object-contain"
                             />
                         </div>
-                        <div className="flex">
+                        {/* <div className="flex">
                             <Image
                                 src="/blocks/learners.svg"
                                 alt="Learners Logo"
@@ -62,7 +62,7 @@ export default function Partners() {
                                 width={120}
                                 className="object-contain"
                             />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
